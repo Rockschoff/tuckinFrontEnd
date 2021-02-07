@@ -25,13 +25,13 @@
 }
 
 .tag {
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
   margin-top: 10px;
 }
 
 .product-name {
-  width: 206px;
+  width: 306px;
   height: 29px;
 
   font-family: Cambay;
@@ -40,6 +40,8 @@
   font-size: 18px;
   line-height: 29px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   color: #000000;
 }
@@ -58,6 +60,8 @@
   color: #000000;
 
   border-bottom: 1px solid pink;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .colors-heading {

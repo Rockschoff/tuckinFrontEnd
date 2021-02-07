@@ -150,7 +150,7 @@ function Product1() {
             {renderOptions()}
           </div>
         </div>
-        <div className="product-name tag">Twill Sheet Set</div>
+        <div className="product-name tag">Bamboo Lyocell Fitted sheet</div>
         <div className="product-prize tag">$ 138.00</div>
         <p className="colors-heading">Colors:</p>
         <div className="color-section">
