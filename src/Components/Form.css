@@ -22,9 +22,9 @@ input[type="number"] {
 }
 
 .col-25 {
-  text-align: left;
+  text-align: center;
   margin-right: auto;
-  margin-left: 120px;
+  margin-left: auto;
   margin-bottom: 10px;
 }
 
@@ -40,8 +40,4 @@ input[type="submit"] {
   border-radius: 12.5px;
   margin-top: 20px;
   color: white;
-}
-
-label {
-  text-align: center;
 }
