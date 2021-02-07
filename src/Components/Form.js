@@ -49,7 +49,9 @@ function Form() {
       <form>
         <div className="row">
           <div className="col-25">
-            <label for="fname">Email</label>
+            <label className="email-text" for="fname">
+              Email
+            </label>
           </div>
           <div className="col-75">
             <input
@@ -66,7 +68,9 @@ function Form() {
         </div>
         <div className="row">
           <div className="col-25">
-            <label for="fname">Phone Number</label>
+            <label className="number-text" for="fname">
+              Phone Number
+            </label>
           </div>
           <div className="col-75">
             <input

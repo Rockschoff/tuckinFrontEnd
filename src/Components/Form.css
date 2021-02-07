@@ -41,3 +41,7 @@ input[type="submit"] {
   margin-top: 20px;
   color: white;
 }
+
+label {
+  text-align: center;
+}
