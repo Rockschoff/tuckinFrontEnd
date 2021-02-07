@@ -114,3 +114,19 @@ img .conclusion-image {
 
   color: #4f3343;
 }
+
+.hero-text-one {
+  z-index: 1;
+  position: relative;
+
+  top: -370px;
+  background-color: transparent;
+}
+
+.hero-text-two {
+  z-index: 1;
+  position: relative;
+
+  top: -360px;
+  background-color: transparent;
+}

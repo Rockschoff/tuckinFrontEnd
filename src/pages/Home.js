@@ -14,6 +14,8 @@ function Home() {
     <div className="Home">
       <div className="hero">
         <img src={hero} className="hero-pic" />
+        <p className="hero-text-one">New year, fresh sheets </p>
+        <p className="hero-text-two">Soft on your skin. Gentle on our planet</p>
         <Link>
           <button
             className="hero-button"
