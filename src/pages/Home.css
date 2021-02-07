@@ -116,7 +116,6 @@ img .conclusion-image {
 }
 
 .hero-text-one {
-  z-index: 1;
   position: relative;
 
   top: -370px;
@@ -124,7 +123,6 @@ img .conclusion-image {
 }
 
 .hero-text-two {
-  z-index: 1;
   position: relative;
 
   top: -360px;
