@@ -19,12 +19,30 @@ function FlexCard({ ImgSrc }) {
   return (
     <div>
       <div>
-        <img src={WhichPic(ImgSrc)} />
-        <p className="flexcard-heading">Repurposed and Reuseable</p>
-        <p className="flexcard-content">
-          We utilize every extra inch of our 100% biodegradable fabric to create
-          the reusable drawstring bags that carry our sheets
-        </p>
+        <img src={WhichPic(ImgSrc)} className="flexcard-image" />
+        {ImgSrc === "1" ? (
+          <p className="flexcard-heading">Repurposed and Reuseable</p>
+        ) : ImgSrc === "2" ? (
+          <p className="flexcard-heading">Guilt-free eco packaging</p>
+        ) : (
+          <p className="flexcard-heading">Upcycled Plastic</p>
+        )}
+        {ImgSrc === "1" ? (
+          <p className="flexcard-content">
+            We utilize every extra inch of our 100% biodegradable fabric to
+            create the reusable drawstring bags that carry our sheets
+          </p>
+        ) : ImgSrc === "2" ? (
+          <p className="flexcard-content">
+            All of our packaging is designed to be resealed, which means it can
+            be reused to reduce waste.
+          </p>
+        ) : (
+          <p className="flexcard-content">
+            We use RPET material made from recycled watre bottles to create
+            luxurious filling for our eye masks.
+          </p>
+        )}
       </div>
     </div>
   );
