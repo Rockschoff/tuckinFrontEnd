@@ -2,12 +2,15 @@ import React from "react";
 import "./SliderCard.css";
 
 function SliderCard({ heading, content }) {
-  const [display, setDisplay] = React.useState({ display: "none" });
+  const [display, setDisplay] = React.useState({
+    height: "1px",
+    transiton: "all 0.5s ease",
+  });
   function showContent() {
-    if (display.display === "none") {
-      setDisplay({ display: "block" });
+    if (display.height === "1px") {
+      setDisplay({ height: "289px" });
     } else {
-      setDisplay({ display: "none" });
+      setDisplay({ height: "1px" });
     }
   }
   return (

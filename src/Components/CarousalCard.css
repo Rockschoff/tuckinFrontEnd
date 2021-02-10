@@ -13,14 +13,14 @@
 
 .top-text {
   position: relative;
-  left: 10%;
+  left: 7%;
   margin-right: 40%;
   /* border: 2px solid pink; */
 }
 
 .bottom-text {
   position: relative;
-  left: 60%;
+  left: 57%;
 }
 
 .bottom {
@@ -128,7 +128,7 @@
   display: inline-block;
   position: relative;
   bottom: 140px;
-  right: 100px;
+  right: 110px;
   width: 164px;
   height: 166px;
   border-radius: 0 100px 0 0;

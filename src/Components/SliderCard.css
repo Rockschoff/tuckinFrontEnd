@@ -3,6 +3,7 @@
   height: 289px;
   margin-left: auto;
   margin-right: auto;
+  overflow-y: hidden;
 
   font-family: Eras Medium ITC;
   font-style: normal;
@@ -11,6 +12,10 @@
   line-height: 21px;
 
   color: #000000;
+}
+
+.slide-content:hover {
+  height: 289px;
 }
 
 .slide-heading {
