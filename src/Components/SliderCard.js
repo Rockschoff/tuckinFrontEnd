@@ -2,15 +2,27 @@ import React from "react";
 import "./SliderCard.css";
 
 function SliderCard({ heading, content }) {
-  const [display, setDisplay] = React.useState({
-    height: "1px",
-    transiton: "all 0.5s ease",
+  const [style, setStyle] = React.useState({
+    animationName: "close",
+    animationDuration: "0s",
+    animationFillMode: "forwards",
   });
+
+  // const [clicked, setClicked] = React.useState(false);
+
   function showContent() {
-    if (display.height === "1px") {
-      setDisplay({ height: "289px" });
+    if (style.animationName === "close") {
+      setStyle({
+        animationName: "open",
+        animationDuration: "1s",
+        animationFillMode: "forwards",
+      });
     } else {
-      setDisplay({ height: "1px" });
+      setStyle({
+        animationName: "close",
+        animationDuration: "1s",
+        animationFillMode: "forwards",
+      });
     }
   }
   return (
@@ -18,7 +30,7 @@ function SliderCard({ heading, content }) {
       <div className="slide-heading" onClick={showContent}>
         {heading}
       </div>
-      <div className="slide-content" style={display}>
+      <div className="slide-content" style={style}>
         <p className="slide-content-para">{content}</p>
       </div>
     </div>

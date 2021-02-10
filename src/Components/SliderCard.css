@@ -1,3 +1,21 @@
+@keyframes open {
+  from {
+    height: 1px;
+  }
+  to {
+    height: 289px;
+  }
+}
+
+@keyframes close {
+  from {
+    height: 289px;
+  }
+  to {
+    height: 1px;
+  }
+}
+
 .slide-content {
   width: 299px;
   height: 289px;
