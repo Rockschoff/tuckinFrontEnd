@@ -49,17 +49,16 @@ function Form() {
       <form>
         <div className="row">
           <div className="col-25">
-            <label className="email-text" for="fname">
-              Email
-            </label>
+            <label className="email-text" for="fname"></label>
           </div>
           <div className="col-75">
             <input
+              className="input-one"
               type="email"
               id="fname"
               name="email"
               value={email}
-              placeholder="Email"
+              placeholder="  Enter name here"
               onChange={(event) => {
                 handleChange(event);
               }}
@@ -68,17 +67,16 @@ function Form() {
         </div>
         <div className="row">
           <div className="col-25">
-            <label className="number-text" for="fname">
-              Phone Number
-            </label>
+            <label className="number-text" for="fname"></label>
           </div>
           <div className="col-75">
             <input
+              className="input-one"
               type="number"
               id="fname"
               name="firstname"
               value={number}
-              placeholder="+91.."
+              placeholder="  +91.."
               onChange={(event) => {
                 handleChange(event);
               }}

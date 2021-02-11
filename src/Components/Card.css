@@ -23,6 +23,7 @@ div {
   margin-left: auto;
   margin-right: auto;
   padding-left: -50px;
+  color: #4f3343;
 }
 
 .card-prize {
@@ -31,6 +32,7 @@ div {
   align-item: center;
   margin-left: auto;
   margin-right: auto;
+  color: #4f3343;
 }
 
 .card-circles {
@@ -62,14 +64,14 @@ div {
 }
 
 .card-buy {
-  color: black;
+  color: #4f3343;
 
   width: 100px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   /* text-decoration: underline; */
-  padding-bottom: 5px;
+  /* padding-bottom: 15px; */
   border: 1px solid black;
   height: 30px;
   border-radius: 15px;

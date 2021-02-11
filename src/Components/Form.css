@@ -1,17 +1,18 @@
 input[type="email"] {
   width: 247px;
-  height: 25px;
+  height: 30px;
   background: #f5f3eb;
-  border: 1px solid #4f3343;
+  border: 1.5px solid #4f3343;
   box-sizing: border-box;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 input[type="number"] {
   width: 247px;
-  height: 25px;
+  height: 30px;
   background: #f5f3eb;
-  border: 1px solid #4f3343;
+  border: 1.5px solid #4f3343;
   box-sizing: border-box;
   border-radius: 5px;
 }

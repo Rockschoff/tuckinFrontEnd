@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar className="navbar-app" />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Product" exact component={Product} />

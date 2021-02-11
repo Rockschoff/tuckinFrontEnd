@@ -19,7 +19,7 @@ function Home() {
     <div className="Home">
       <div className="hero">
         <img src={hero} className="hero-pic" />
-        <p className="hero-text-one">New year, fresh sheets </p>
+        {/*<p className="hero-text-one">New year, fresh sheets </p>*/}
         <p className="hero-text-two">Soft on your skin. Gentle on our planet</p>
         <Link>
           <button
@@ -29,11 +29,14 @@ function Home() {
               scrollTo();
             }}
           >
-            Shop Now
+            Shop Sheets
           </button>
         </Link>
 
-        <div className="shop-heading"> Our Products </div>
+        <div className="shop-heading">
+          {" "}
+          Tuck yourself into Cleanbamboo Sheets, for mindful living and sleeping{" "}
+        </div>
         <div className="body">
           <Card type="1" />
           <Card type="2" />
