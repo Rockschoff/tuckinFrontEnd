@@ -8,8 +8,13 @@ import FlexCard from "../Components/FlexCard";
 import Form from "../Components/Form";
 import Footer from "../Components/Footer";
 import Send from "../Components/Send.js";
+import { animateScroll } from "react-scroll";
 
 function Home() {
+  const scrollTo = () => {
+    animateScroll.scrollTo(550, { duration: 1000 });
+  };
+
   return (
     <div className="Home">
       <div className="hero">
@@ -21,6 +26,7 @@ function Home() {
             className="hero-button"
             onClick={() => {
               Send("Home", "Shop Now");
+              scrollTo();
             }}
           >
             Shop Now

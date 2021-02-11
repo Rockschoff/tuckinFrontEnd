@@ -152,7 +152,7 @@ function Product1() {
           <div className="photo-options">{renderOptions()}</div>
         </div>
         <div className="product-name tag">Bamboo Lyocell Sheet Set</div>
-        <div className="product-prize tag">$ 138.00</div>
+        <div className="product-prize tag">$138.00 </div>
         <p className="colors-heading ">Colors:</p>
         <div className="color-section">
           {/*colors.map((color) => (

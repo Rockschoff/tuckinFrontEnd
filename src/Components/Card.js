@@ -17,6 +17,10 @@ function Card({ type }) {
       : "buy-now-bamboo-fitted"
   );
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   function renderCircles() {
     if (type === "1") {
       return (
@@ -113,6 +117,7 @@ function Card({ type }) {
               className="card-buy"
               onClick={() => {
                 Send("Home", cardName);
+                scrollToTop();
               }}
             >
               Buy Now

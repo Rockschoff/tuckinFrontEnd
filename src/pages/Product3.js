@@ -151,7 +151,7 @@ function Product1() {
           </div>
         </div>
         <div className="product-name tag">Bamboo Lyocell Fitted sheet</div>
-        <div className="product-prize tag">$ 138.00</div>
+        <div className="product-prize tag">$138.00</div>
         <p className="colors-heading">Colors:</p>
         <div className="color-section">
           <div
