@@ -30,22 +30,46 @@ function Navbar() {
         style={{ transform: click ? "translateX(0)" : "translateX(-500px)" }}
       >
         <li>
-          <Link to="/" className="link">
+          <Link
+            to="/"
+            className="link"
+            onClick={() => {
+              setClick(false);
+            }}
+          >
             Shop
           </Link>
         </li>
         <li>
-          <Link to="/Materials" className="link">
+          <Link
+            to="/Materials"
+            className="link"
+            onClick={() => {
+              setClick(false);
+            }}
+          >
             Materials
           </Link>
         </li>
         <li>
-          <Link to="/" className="link">
+          <Link
+            to="/"
+            className="link"
+            onClick={() => {
+              setClick(false);
+            }}
+          >
             Trackorder
           </Link>
         </li>
         <li>
-          <Link to="/About" className="link">
+          <Link
+            to="/About"
+            className="link"
+            onClick={() => {
+              setClick(false);
+            }}
+          >
             About us
           </Link>
         </li>

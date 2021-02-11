@@ -169,7 +169,7 @@ function Product1() {
           ></div>
           <div
             className="color-option "
-            style={{ backgroundColor: "green" }}
+            style={{ backgroundColor: "#598556" }}
             onClick={() => {
               Send("Product1", "ColorOption-sage");
               setColor("sage");
