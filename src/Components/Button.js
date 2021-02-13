@@ -39,7 +39,6 @@ function Button({ name, active }) {
   return (
     <button
       className="button"
-      style={style}
       onClick={() => {
         console.log("yes");
       }}
