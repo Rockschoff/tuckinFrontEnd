@@ -113,7 +113,7 @@ function Card({ type }) {
           {renderCircles()}
 
           <Link to={"/Product-" + type}>
-            <div
+            <button
               className="card-buy"
               onClick={() => {
                 Send("Home", cardName);
@@ -121,7 +121,7 @@ function Card({ type }) {
               }}
             >
               Buy Now
-            </div>
+            </button>
           </Link>
         </div>
       </div>
