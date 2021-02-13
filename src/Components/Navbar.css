@@ -24,6 +24,7 @@ nav {
   align-items: center;
   background: #f5f3eb;
   position: static;
+  border-bottom: 1px solid pink;
 }
 
 .logo {
@@ -32,6 +33,11 @@ nav {
   display: flex;
   justify-content: center;
   font-family: Charmonman;
+  color: black;
+  position: relative;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
@@ -86,8 +92,8 @@ li {
   .icon {
     display: block;
     position: absolute;
-    left: 35px;
-    top: 25px;
+    top: 19px;
+    left: 10%;
     z-index: 2;
   }
 }

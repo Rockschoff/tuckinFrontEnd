@@ -24,7 +24,9 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="logo">Tuck-in</div>
+      <Link to="/">
+        <div className="logo">Tuck-in</div>
+      </Link>
       <ul
         className="nav-links"
         style={{ transform: click ? "translateX(0)" : "translateX(-500px)" }}
