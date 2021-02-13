@@ -13,6 +13,12 @@ import Product3 from "./pages/Product3.js";
 function App() {
   const [apiConnect, setApiConnect] = React.useState("initial");
   const [err, setErr] = React.useState({});
+  const [scrollPosition, setScrollPosition] = React.useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
 
   async function TestBackend() {
     console.log("here");
@@ -29,11 +35,16 @@ function App() {
   }
   React.useEffect(() => {
     TestBackend();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   return (
     <div className="App">
       <Router>
-        <Navbar className="navbar-app" />
+        <Navbar position={scrollPosition} className="navbar-app" />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Product" exact component={Product} />

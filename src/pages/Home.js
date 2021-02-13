@@ -15,6 +15,20 @@ function Home() {
     animateScroll.scrollTo(550, { duration: 1000 });
   };
 
+  const [scrollPosition, setScrollPosition] = React.useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="Home">
       <div className="hero">

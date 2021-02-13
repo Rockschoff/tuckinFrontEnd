@@ -23,8 +23,12 @@ nav {
   padding-top: 25px;
   align-items: center;
   background: #f5f3eb;
-  position: static;
+  /* position: -webkit-sticky; */
+  /* position: absolute;
+  width: 100%;
+  top: 0px; */
   border-bottom: 1px solid pink;
+  z-index: 1;
 }
 
 .logo {
@@ -44,6 +48,7 @@ ul {
   display: flex;
   justify-content: space-around;
   tranform: translateX(0);
+  z-index: 8;
 }
 
 .nav-links .link {
@@ -74,7 +79,7 @@ li {
 
     transform: translateX(-500px);
     transition: 500ms;
-    z-index: 1;
+    z-index: 2;
   }
 
   .nav-links li {
@@ -94,6 +99,6 @@ li {
     position: absolute;
     top: 19px;
     left: 10%;
-    z-index: 2;
+    z-index: 11;
   }
 }

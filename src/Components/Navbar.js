@@ -7,7 +7,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, fas);
 
-function Navbar() {
+function Navbar({ position }) {
   const [click, setClick] = useState(false);
 
   function checkClick() {
@@ -23,7 +23,7 @@ function Navbar() {
   window.addEventListener("resize", checkClick);
 
   return (
-    <nav>
+    <nav style={{ position: "absolute", top: position, width: "100%" }}>
       <Link to="/">
         <div className="logo">Tuck-in</div>
       </Link>
