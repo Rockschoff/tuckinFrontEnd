@@ -24,9 +24,10 @@ nav {
   align-items: center;
   background: #f5f3eb;
   /* position: -webkit-sticky; */
-  /* position: absolute;
+  position: fixed;
+  margin-bottom: 30px;
   width: 100%;
-  top: 0px; */
+  top: 0px;
   border-bottom: 1px solid pink;
   z-index: 1;
 }

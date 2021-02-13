@@ -23,7 +23,7 @@ function Navbar({ position }) {
   window.addEventListener("resize", checkClick);
 
   return (
-    <nav style={{ position: "absolute", top: position, width: "100%" }}>
+    <nav>
       <Link to="/">
         <div className="logo">Tuck-in</div>
       </Link>

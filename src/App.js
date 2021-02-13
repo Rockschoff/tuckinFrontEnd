@@ -35,11 +35,11 @@ function App() {
   }
   React.useEffect(() => {
     TestBackend();
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    // window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
   return (
     <div className="App">
