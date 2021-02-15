@@ -15,6 +15,24 @@ import Footer from "../Components/Footer";
 import Button from "../Components/Button";
 function Materials() {
   const [material, setMaterial] = React.useState("Charcoal");
+  const [buttonStyles, setButtonStyles] = React.useState({
+    cleanBamboo: {
+      color: "black",
+      backgroundColor: "transparent",
+    },
+    charcoal: {
+      color: "white",
+      backgroundColor: "grey",
+    },
+    twill: {
+      color: "black",
+      backgroundColor: "transparent",
+    },
+    waffle: {
+      color: "black",
+      backgroundColor: "transparent",
+    },
+  });
   var status = ["true", "false", "false", "false"];
 
   // React.useEffect(() => {
@@ -49,11 +67,11 @@ function Materials() {
     console.log(ls, "here");
     const feats = ls.map((point) => <li className="feat-item">{point}</li>);
     return (
-      <div>
+      <div className="material-body-body">
         {renderDes()}
         <div className="line"></div>
         <div className="material-for-you">This is for you if..</div>
-
+        <div className="space"></div>
         <ul className="material-feats">{feats}</ul>
       </div>
     );
@@ -69,8 +87,89 @@ function Materials() {
     );
   }
 
+  function changeStyle(name) {
+    if (name === "CleanBamboo") {
+      setButtonStyles({
+        cleanBamboo: {
+          color: "white",
+          backgroundColor: "grey",
+        },
+        charcoal: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        twill: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        waffle: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+      });
+    } else if (name === "Charcoal") {
+      setButtonStyles({
+        cleanBamboo: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        charcoal: {
+          color: "white",
+          backgroundColor: "grey",
+        },
+        twill: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        waffle: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+      });
+    } else if (name === "Twill") {
+      setButtonStyles({
+        cleanBamboo: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        charcoal: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        twill: {
+          color: "white",
+          backgroundColor: "grey",
+        },
+        waffle: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+      });
+    } else if (name === "Waffle") {
+      setButtonStyles({
+        cleanBamboo: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        charcoal: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        twill: {
+          color: "black",
+          backgroundColor: "transparent",
+        },
+        waffle: {
+          color: "white",
+          backgroundColor: "grey",
+        },
+      });
+    }
+  }
+
   function handleClick(event) {
     setMaterial(event.target.innerText);
+    changeStyle(event.target.innerText);
   }
 
   function giveFeats() {
@@ -201,6 +300,7 @@ function Materials() {
             Send("Materials", "CleanBamboo");
             handleClick(event);
           }}
+          style={buttonStyles.cleanBamboo}
         >
           CleanBamboo
         </button>
@@ -210,6 +310,7 @@ function Materials() {
             Send("Materials", "Charcoal");
             handleClick(event);
           }}
+          style={buttonStyles.charcoal}
         >
           Charcoal
         </button>
@@ -219,6 +320,7 @@ function Materials() {
             Send("Materials", "Twill");
             handleClick(event);
           }}
+          style={buttonStyles.twill}
         >
           Twill
         </button>
@@ -228,6 +330,7 @@ function Materials() {
             Send("Materials", "Waffle");
             handleClick(event);
           }}
+          style={buttonStyles.waffle}
         >
           Waffle
         </button>

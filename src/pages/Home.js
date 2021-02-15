@@ -34,7 +34,13 @@ function Home() {
       <div className="hero">
         <img src={hero} className="hero-pic" />
         {/*<p className="hero-text-one">New year, fresh sheets </p>*/}
-        <p className="hero-text-two">Soft on your skin. Gentle on our planet</p>
+        <div className="hero-text-two">
+          <p style={{ backgroundColor: "transparent" }}>Soft on your skin.</p>
+          <p style={{ backgroundColor: "transparent" }}>
+            {" "}
+            Gentle on our planet
+          </p>
+        </div>
         <Link>
           <button
             className="hero-button"

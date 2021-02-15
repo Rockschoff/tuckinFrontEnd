@@ -14,7 +14,7 @@ const MaterialInfo = {
   Charcoal: {
     name: "Charcoal",
     description:
-      "CleanBamboo is our signature bamboo lyocell fabric made from 100% organic bamboo—the most resource-efficient plant on the planet. We crush the bamboo into a pulp, then dissolve it into a fine fiber using a non-toxic, closed-loop system, saving 98% of the water. The fiber is spun into yarn and woven into a silk-like fabric that gets softer with every wash. It’s hypoallergenic, thermo-regulating and water-saving.",
+      "A thoughtful approach led us to design the world’s first CleanBamboo™ Charcoal fabric. Our signature CleanBamboo™ is infused with naturally antimicrobial bamboo charcoal, resulting in a silky-soft material that stays fresh-feeling and clean-smelling longer—science says so. The porous structure of bamboo charcoal absorbs unwanted odors, wicks away moisture and is proven to reduce bacteria by 99.9%. Soft and sustainable sleep essentials that last longer between washes.",
     features: [
       "Want frizz-free, smooth hair",
       "Treat your skin with extracare",
@@ -38,7 +38,7 @@ const MaterialInfo = {
   Waffle: {
     name: "Waffle",
     description:
-      "CleanBamboo is our signature bamboo lyocell fabric made from 100% organic bamboo—the most resource-efficient plant on the planet. We crush the bamboo into a pulp, then dissolve it into a fine fiber using a non-toxic, closed-loop system, saving 98% of the water. The fiber is spun into yarn and woven into a silk-like fabric that gets softer with every wash. It’s hypoallergenic, thermo-regulating and water-saving.",
+      "CleanBamboo™ feels so good, you’ll want to live in it—not just sleep in it. Introducing CleanBamboo™ Waffle. Boasting all of the cooling, sustainable silkiness you expect from our fabrics, our light-as-air towels and robes are luxuriously soft, hypoallergenic and moisture-wicking. Comforting and gently exfoliating, this waffle weave fabric pampers hair and skin, wrapping you in an at-home spa experience. So cozy you’ll want to cancel tonight’s plans and stay in.",
     features: [
       "Want frizz-free, smooth hair",
       "Treat your skin with extracare",

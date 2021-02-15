@@ -14,7 +14,7 @@
 .material-choices {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 35px;
+  margin-top: 65px;
 }
 
 .material-head {
@@ -71,10 +71,12 @@
 
 .material-for-you {
   width: 80%;
-  height: auto;
+  /* height: auto; */
+  height: 80px;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2px;
 
   font-family: Cambay;
   font-style: normal;
@@ -82,20 +84,25 @@
   font-size: 24px;
   line-height: 39px;
   padding-top: 25px;
+  padding-botton: 100px;
+  /* background-color: grey; */
 }
 .material-feats {
   width: 80%;
-  height: auto;
+  /* height: auto; */
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  /* margin-top: 0; */
 
-  list-style: ;
+  position: relative;
+  botton: 100px;
 }
 
 .feat-item {
   width: 80%;
-  height: auto;
+  height: 40px;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
@@ -106,6 +113,10 @@
   font-size: 13px;
   line-height: 21px;
   letter-spacing: 0.05em;
+  /* margin-top: 50px; */
+  text-align: center;
+  margin-top: auto;
+  margin-botton: 30px;
 
   color: #000000;
 }
