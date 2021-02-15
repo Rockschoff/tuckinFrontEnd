@@ -25,7 +25,7 @@ function Navbar({ position }) {
   return (
     <nav>
       <Link to="/">
-        <div className="logo">Tuck-in</div>
+        <div className="logo">tuckin</div>
       </Link>
       <ul
         className="nav-links"
