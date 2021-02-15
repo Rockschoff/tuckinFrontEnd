@@ -49,7 +49,7 @@ function Home() {
 
         <div className="shop-heading">
           {" "}
-          Tuck yourself into Cleanbamboo Sheets, for mindful living and sleeping{" "}
+          Tuck yourself into CleanBamboo Sheets, for mindful living and sleeping{" "}
         </div>
         <div className="body">
           <Card type="1" />

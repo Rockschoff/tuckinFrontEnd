@@ -26,7 +26,7 @@
 .hero-button {
   position: relative;
 
-  top: -300px;
+  top: -260px;
   width: 221px;
   height: 43px;
 
@@ -34,11 +34,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 2px solid grey;
   border-radius: 21.5px;
-  /* color: #fff; */
+  color: #f5f3eb;
+  font-size: 16px;
 }
 
 .shop-heading {
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 500;
   /* text-decoration: underline; */
   width: 300px;
   margin-left: auto;
@@ -50,6 +52,7 @@
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
+  margin-top: 40px;
 }
 img .conclusion-image {
   width: 100%;
