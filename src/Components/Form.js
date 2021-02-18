@@ -58,7 +58,7 @@ function Form() {
               id="fname"
               name="email"
               value={email}
-              placeholder="  Enter name here"
+              placeholder="  Enter your name here"
               onChange={(event) => {
                 handleChange(event);
               }}

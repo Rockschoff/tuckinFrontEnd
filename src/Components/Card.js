@@ -106,7 +106,7 @@ function Card({ type }) {
             : "Bamboo Lyocell Fitted Sheets"}
         </div>
         <div className=" card-prize">
-          {type === "1" ? "$100" : type === "2" ? "$80" : "$60"}
+          {type === "1" ? "2499/-" : type === "2499/-" ? "$80" : "2999/-"}
         </div>
         <div className="card-line"></div>
         <div className="card-circles">

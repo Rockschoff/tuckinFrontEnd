@@ -152,7 +152,7 @@ function Product1() {
           <div className="photo-options">{renderOptions()}</div>
         </div>
         <div className="product-name tag">Bamboo Lyocell Sheet Set</div>
-        <div className="product-prize tag">$138.00 </div>
+        <div className="product-prize tag">INR 2499/- </div>
         <p className="colors-heading ">Colors:</p>
         <div className="color-section">
           {/*colors.map((color) => (
@@ -206,7 +206,7 @@ function Product1() {
               }}
               style={size === "108x108" ? { backgroundColor: "lightgray" } : {}}
             >
-              108x108
+              Single
             </div>
             <div
               className="size-option"
@@ -217,7 +217,7 @@ function Product1() {
               style={size === "112x112" ? { backgroundColor: "lightgray" } : {}}
             >
               {" "}
-              112x112
+              King
             </div>
             <div
               className="size-option"
@@ -227,7 +227,7 @@ function Product1() {
               }}
               style={size === "108x112" ? { backgroundColor: "lightgray" } : {}}
             >
-              108x112
+              Queen
             </div>
           </div>
           {/*<div className="size-option-row2">
@@ -276,13 +276,10 @@ function Product1() {
 
         <SliderCard
           heading="Description"
-          content={ProductsInfo.product.description}
+          content={ProductsInfo.prod1.description}
         />
-        <SliderCard
-          heading="Details"
-          content={ProductsInfo.product.description}
-        />
-        <SliderCard heading="Care" content={ProductsInfo.product.description} />
+        <SliderCard heading="Details" content={ProductsInfo.prod2.details} />
+        <SliderCard heading="Care" content={ProductsInfo.prod1.care} />
         <CarousalCard />
         <p className="sign-up">Sign up to stay in touch! </p>
         <Form />

@@ -21,7 +21,7 @@ function FlexCard({ ImgSrc }) {
       <div>
         <img src={WhichPic(ImgSrc)} className="flexcard-image" />
         {ImgSrc === "1" ? (
-          <p className="flexcard-heading">Repurposed and Reuseable</p>
+          <p className="flexcard-heading">Repurposed and Reusable</p>
         ) : ImgSrc === "2" ? (
           <p className="flexcard-heading">Guilt-free eco packaging</p>
         ) : (
@@ -39,7 +39,7 @@ function FlexCard({ ImgSrc }) {
           </p>
         ) : (
           <p className="flexcard-content">
-            We use RPET material made from recycled watre bottles to create
+            We use RPET material made from recycled water bottles to create
             luxurious filling for our eye masks.
           </p>
         )}

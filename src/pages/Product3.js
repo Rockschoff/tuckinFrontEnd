@@ -151,7 +151,7 @@ function Product1() {
           </div>
         </div>
         <div className="product-name tag">Bamboo Lyocell Fitted sheet</div>
-        <div className="product-prize tag">$138.00</div>
+        <div className="product-prize tag">INR 2999/-</div>
         <p className="colors-heading">Colors:</p>
         <div className="color-section">
           <div
@@ -202,7 +202,7 @@ function Product1() {
               }}
               style={size === "108x108" ? { backgroundColor: "lightgray" } : {}}
             >
-              108x108
+              Single
             </div>
             <div
               className="size-option"
@@ -213,7 +213,7 @@ function Product1() {
               style={size === "112x112" ? { backgroundColor: "lightgray" } : {}}
             >
               {" "}
-              112x112
+              King
             </div>
             <div
               className="size-option"
@@ -223,7 +223,7 @@ function Product1() {
               }}
               style={size === "108x112" ? { backgroundColor: "lightgray" } : {}}
             >
-              108x112
+              Queen
             </div>
           </div>
           {/*<div className="size-option-row2">
@@ -272,13 +272,10 @@ function Product1() {
 
         <SliderCard
           heading="Description"
-          content={ProductsInfo.product.description}
+          content={ProductsInfo.prod3.description}
         />
-        <SliderCard
-          heading="Details"
-          content={ProductsInfo.product.description}
-        />
-        <SliderCard heading="Care" content={ProductsInfo.product.description} />
+        <SliderCard heading="Details" content={ProductsInfo.prod3.details} />
+        <SliderCard heading="Care" content={ProductsInfo.prod3.care} />
         <CarousalCard />
         <p className="sign-up">Sign up to stay in touch! </p>
         <Form />

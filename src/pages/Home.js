@@ -9,6 +9,7 @@ import Form from "../Components/Form";
 import Footer from "../Components/Footer";
 import Send from "../Components/Send.js";
 import { animateScroll } from "react-scroll";
+import bed from "../images/bed.jfif";
 
 function Home() {
   const scrollTo = () => {
@@ -38,7 +39,7 @@ function Home() {
           <p style={{ backgroundColor: "transparent" }}>Soft on your skin.</p>
           <p style={{ backgroundColor: "transparent" }}>
             {" "}
-            Gentle on our planet
+            Gentle on our planet.
           </p>
         </div>
         <Link>
@@ -67,7 +68,7 @@ function Home() {
           <p className="conclusion-text">Clean Bamboo, our fabric of future</p>
           <p className="made-from">
             Made from 100% organic bamboo, it’s softer, cooler and more
-            sustainable than cotton. For a helathier planet and happier
+            sustainable than cotton. For a healthier planet and happier
             lounging.
           </p>
           <div className="flex">
@@ -82,7 +83,7 @@ function Home() {
                 Send("Home", "See More");
               }}
             >
-              See more...
+              Learn more...
             </button>
           </Link>
           <p className="sign-up-prompt">Sign Up to stay in touch</p>

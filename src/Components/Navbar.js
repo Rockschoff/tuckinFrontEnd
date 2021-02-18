@@ -61,7 +61,7 @@ function Navbar({ position }) {
               setClick(false);
             }}
           >
-            Trackorder
+            Track Order
           </Link>
         </li>
         <li>
@@ -72,7 +72,7 @@ function Navbar({ position }) {
               setClick(false);
             }}
           >
-            About us
+            About Us
           </Link>
         </li>
       </ul>
