@@ -55,7 +55,7 @@ function Navbar({ position }) {
         </li>
         <li>
           <Link
-            to="/"
+            to="/trackorder"
             className="link"
             onClick={() => {
               setClick(false);
