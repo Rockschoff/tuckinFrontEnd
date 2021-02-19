@@ -277,9 +277,18 @@ function Product1() {
         <SliderCard
           heading="Description"
           content={ProductsInfo.prod1.description}
+          pointer={false}
         />
-        <SliderCard heading="Details" content={ProductsInfo.prod2.details} />
-        <SliderCard heading="Care" content={ProductsInfo.prod1.care} />
+        <SliderCard
+          heading="Details"
+          content={ProductsInfo.prod1.details}
+          pointer={true}
+        />
+        <SliderCard
+          heading="Care"
+          content={ProductsInfo.prod1.care}
+          pointer={false}
+        />
         <CarousalCard />
         <p className="sign-up">Sign up to stay in touch! </p>
         <Form />

@@ -16,6 +16,18 @@
   }
 }
 
+.slider-list {
+  display: block;
+  background-color: transparent;
+  list-style-type: square;
+}
+
+.slider-list li {
+  background-color: transparent;
+  border-bottom: 0;
+  margin-top: 50px;
+  height: 40px;
+}
 .slide-content {
   width: 299px;
   height: 289px;
@@ -26,7 +38,7 @@
   font-family: Eras Medium ITC;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 
   color: #000000;
