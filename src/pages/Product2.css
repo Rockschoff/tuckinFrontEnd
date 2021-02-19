@@ -45,12 +45,13 @@
 }
 
 .product-prize {
-  width: 65px;
+  width: 100px;
+  font-weight: 100;
   height: 29px;
 
-  font-family: Cambay;
+  /* font-family: Cambay;
   font-style: normal;
-  font-weight: normal;
+  font-weight: normal; */
   font-size: 18px;
   line-height: 29px;
   text-align: center;
