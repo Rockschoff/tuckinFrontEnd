@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 import Send from "../Components/Send.js";
 import { animateScroll } from "react-scroll";
 import bed from "../images/bed.jfif";
-
+import vector from "../images/vector.svg";
 function Home() {
   const scrollTo = () => {
     animateScroll.scrollTo(550, { duration: 1000 });
