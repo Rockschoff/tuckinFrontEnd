@@ -101,7 +101,7 @@ li {
   .icon {
     display: block;
     position: absolute;
-    top: 19px;
+    top: 25px;
     left: 5%;
     z-index: 5;
   }

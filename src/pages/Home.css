@@ -26,7 +26,7 @@
 .hero-button {
   position: relative;
 
-  top: -260px;
+  top: -245px;
   width: 221px;
   height: 43px;
 
@@ -69,7 +69,7 @@ img .conclusion-image {
   width: 338px;
   height: 229px;
   position: relative;
-  top: -400px;
+  top: -500px;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
@@ -135,7 +135,8 @@ img .conclusion-image {
 
 .hero-text-two {
   position: relative;
-  font-size: 20x;
-  top: -360px;
+  font-size: 20px;
+  font-weight: 600;
+  top: -260px;
   background-color: transparent;
 }
