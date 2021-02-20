@@ -6,7 +6,7 @@ import Footer from "../Components/Footer.js";
 function About() {
   return (
     <>
-      <div>
+      <div className="about-page">
         <div className="about-heading">About us</div>
         <div className="about-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
