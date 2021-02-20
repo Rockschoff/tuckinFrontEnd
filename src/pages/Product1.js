@@ -152,7 +152,7 @@ function Product1() {
           <div className="photo-options">{renderOptions()}</div>
         </div>
         <div className="product-name tag">Bamboo Lyocell Sheet Set</div>
-        <div className="product-prize tag">2499/- </div>
+        <div className="product-prize tag">INR 2499 </div>
         <p className="colors-heading ">Colors:</p>
         <div className="color-section">
           {/*colors.map((color) => (
@@ -198,7 +198,7 @@ function Product1() {
         <p className="size-heading">Sizes :</p>
         <div className="size-section">
           <div className="size-option-row1">
-            <div
+            <button
               className="size-option"
               onClick={() => {
                 Send("Product1", "108x108");
@@ -207,8 +207,8 @@ function Product1() {
               style={size === "108x108" ? { backgroundColor: "lightgray" } : {}}
             >
               Single
-            </div>
-            <div
+            </button>
+            <button
               className="size-option"
               onClick={() => {
                 Send("Product1", "112x112");
@@ -218,8 +218,8 @@ function Product1() {
             >
               {" "}
               King
-            </div>
-            <div
+            </button>
+            <button
               className="size-option"
               onClick={() => {
                 Send("Product1", "108x112");
@@ -228,7 +228,7 @@ function Product1() {
               style={size === "108x112" ? { backgroundColor: "lightgray" } : {}}
             >
               Queen
-            </div>
+            </button>
           </div>
           {/*<div className="size-option-row2">
               <div className="size-option">Size</div>

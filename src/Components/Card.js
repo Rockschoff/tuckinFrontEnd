@@ -100,13 +100,13 @@ function Card({ type }) {
         />
         <div className="card-name">
           {type === "1"
-            ? "Bamboo Lyocell Sheet"
+            ? "Bamboo Lyocell Sheet Set"
             : type === "2"
-            ? "Charcoal  sheets"
-            : "Bamboo Lyocell Fitted Sheets"}
+            ? "Charcoal Sheet Set"
+            : "Bamboo Lyocell Fitted Sheet Set"}
         </div>
         <div className=" card-prize">
-          {type === "1" ? "2499/-" : type === "2499/-" ? "$80" : "2999/-"}
+          {type === "1" ? "INR 2499" : type === "2" ? "INR 2499" : "INR 2999"}
         </div>
         <div className="card-line"></div>
         <div className="card-circles">

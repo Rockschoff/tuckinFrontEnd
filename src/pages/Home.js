@@ -83,7 +83,7 @@ function Home() {
                 Send("Home", "See More");
               }}
             >
-              Learn more...
+              Learn more
             </button>
           </Link>
           <p className="sign-up-prompt">Sign Up to stay in touch</p>

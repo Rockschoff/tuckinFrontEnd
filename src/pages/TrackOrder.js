@@ -59,7 +59,7 @@ function TrackOrder() {
               id="fname"
               name="email"
               value={email}
-              placeholder="  Enter ypur name here"
+              placeholder="  Enter your name here"
               onChange={(event) => {
                 handleChange(event);
               }}
