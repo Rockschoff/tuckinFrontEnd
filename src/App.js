@@ -23,7 +23,7 @@ function App() {
 
   async function TestBackend() {
     console.log("here");
-    const res = await fetch("http://localhost:9000/test");
+    const res = await fetch("/test");
     res
       .text()
       .then((res) => {

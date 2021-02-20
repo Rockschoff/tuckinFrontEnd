@@ -7,7 +7,7 @@ function Form() {
   const [number, setNumber] = React.useState("");
 
   async function sendData() {
-    const res = await fetch("http://localhost:9000/form", {
+    const res = await fetch("/form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

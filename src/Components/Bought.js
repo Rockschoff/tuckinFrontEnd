@@ -9,7 +9,7 @@ function Bought(cart, size, color, product) {
   };
 
   async function SendData() {
-    const res = await fetch("http://localhost:9000/bought", {
+    const res = await fetch("/bought", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

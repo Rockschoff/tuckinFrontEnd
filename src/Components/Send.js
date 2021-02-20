@@ -7,7 +7,7 @@ function Send(page, buttonName) {
   };
 
   async function SendData() {
-    const res = await fetch("http://localhost:9000/data", {
+    const res = await fetch("/data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
