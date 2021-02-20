@@ -21,6 +21,12 @@
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
+  justify-content: center;
+}
+
+.popup-form {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .close-icon {

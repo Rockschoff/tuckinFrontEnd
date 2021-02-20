@@ -1,7 +1,7 @@
 import React from "react";
 import "./Form.css";
 
-function Form() {
+function Form({ width = false }) {
   const [buttons, setButtons] = React.useState({ submit: 0 });
   const [email, setEmail] = React.useState("");
   const [number, setNumber] = React.useState("");
@@ -54,6 +54,7 @@ function Form() {
           <div className="col-75">
             <input
               className="input-one"
+              style={width ? { width: "200px" } : { width: "250px" }}
               type="email"
               id="fname"
               name="email"
@@ -72,6 +73,7 @@ function Form() {
           <div className="col-75">
             <input
               className="input-one"
+              style={width ? { width: "200px" } : { width: "250px" }}
               type="number"
               id="fname"
               name="firstname"
