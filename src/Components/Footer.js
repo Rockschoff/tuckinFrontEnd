@@ -1,17 +1,35 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, fas);
 
 function Footer() {
   return (
     <>
       <div className="footer">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <div className="footer-text">
+          Consumers rate us 4.7/5 based on 188 reviews
+        </div>
+        <div className="footer-media">
+          <FontAwesomeIcon
+            icon={["fab", "twitter"]}
+            size="3x"
+            className="footer-icon"
+          />
+          <FontAwesomeIcon
+            icon={["fab", "instagram"]}
+            size="3x"
+            className="footer-icon"
+          />
+          <FontAwesomeIcon
+            icon={["fab", "facebook"]}
+            size="3x"
+            className="footer-icon"
+          />
+        </div>
       </div>
     </>
   );

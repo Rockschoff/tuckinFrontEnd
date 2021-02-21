@@ -15,4 +15,24 @@
   margin-top: 25px;
 
   color: #ffffff;
+  display: block;
+}
+
+.footer-text {
+  background-color: #656565;
+  font-size: 15px;
+  position: relative;
+  top: 70px;
+}
+
+.footer-media {
+  color: #ffffff;
+  background-color: #656565;
+  position: relative;
+  top: 100px;
+}
+
+.footer-icon {
+  background-color: #656565;
+  margin-right: 25px;
 }

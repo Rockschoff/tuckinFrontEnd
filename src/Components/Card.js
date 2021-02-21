@@ -17,6 +17,24 @@ function Card({ type }) {
       : "buy-now-bamboo-fitted"
   );
 
+  const [circleStyle, setCircleStyle] = React.useState({
+    prod1: {
+      white: "circle white-circle circle-style",
+      sage: "circle sage-circle no-style",
+      pink: "circle pink-circle no-style",
+      strip: "circle strip-circle no-style",
+    },
+    prod2: {
+      grey: "circle grey-circle circle-style",
+    },
+    prod3: {
+      white: "circle white-circle circle-style",
+      sage: "circle sage-circle no-style",
+      pink: "circle pink-circle no-style",
+      grey: "circle grey-circle no-style",
+    },
+  });
+
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -26,27 +44,63 @@ function Card({ type }) {
       return (
         <>
           <div
-            className="circle white-circle"
+            className={circleStyle.prod1.white}
             onClick={() => {
               setTypeOnePic(ProdPics.one.white[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod1: {
+                  white: "circle white-circle circle-style",
+                  sage: "circle sage-circle no-style",
+                  pink: "circle pink-circle no-style",
+                  strip: "circle grey-circle no-style",
+                },
+              }));
             }}
           ></div>
           <div
-            className="circle sage-circle"
+            className={circleStyle.prod1.sage}
             onClick={() => {
               setTypeOnePic(ProdPics.one.sage[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod1: {
+                  white: "circle white-circle no-style",
+                  sage: "circle sage-circle circle-style",
+                  pink: "circle pink-circle no-style",
+                  strip: "circle grey-circle no-style",
+                },
+              }));
             }}
           ></div>
           <div
-            className="circle pink-circle"
+            className={circleStyle.prod1.pink}
             onClick={() => {
               setTypeOnePic(ProdPics.one.pink[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod1: {
+                  white: "circle white-circle no-style",
+                  sage: "circle sage-circle no-style",
+                  pink: "circle pink-circle circle-style",
+                  strip: "circle grey-circle no-style",
+                },
+              }));
             }}
           ></div>
           <div
-            className="circle strip-circle"
+            className={circleStyle.prod1.strip}
             onClick={() => {
               setTypeOnePic(ProdPics.one.strip[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod1: {
+                  white: "circle white-circle no-style",
+                  sage: "circle sage-circle no-style",
+                  pink: "circle pink-circle no-style",
+                  strip: "circle grey-circle circle-style",
+                },
+              }));
             }}
           ></div>
         </>
@@ -54,34 +108,70 @@ function Card({ type }) {
     } else if (type === "2") {
       return (
         <>
-          <div className="circle grey-circle"></div>
+          <div className={circleStyle.prod2.grey}></div>
         </>
       );
     } else {
       return (
         <>
           <div
-            className="circle white-circle"
+            className={circleStyle.prod3.white}
             onClick={() => {
               setTypeOnePic(ProdPics.four.white[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod3: {
+                  white: "circle white-circle circle-style",
+                  sage: "circle sage-circle no-style",
+                  pink: "circle pink-circle no-style",
+                  grey: "circle grey-circle no-style",
+                },
+              }));
             }}
           ></div>
           <div
-            className="circle sage-circle"
+            className={circleStyle.prod3.sage}
             onClick={() => {
               setTypeOnePic(ProdPics.four.green[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod3: {
+                  white: "circle white-circle no-style",
+                  sage: "circle sage-circle circle-style",
+                  pink: "circle pink-circle no-style",
+                  grey: "circle grey-circle no-style",
+                },
+              }));
             }}
           ></div>
           <div
-            className="circle pink-circle"
+            className={circleStyle.prod3.pink}
             onClick={() => {
               setTypeOnePic(ProdPics.four.pink[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod3: {
+                  white: "circle white-circle no-style",
+                  sage: "circle sage-circle no-style",
+                  pink: "circle pink-circle circle-style",
+                  grey: "circle grey-circle no-style",
+                },
+              }));
             }}
           ></div>
           <div
-            className="circle grey-circle"
+            className={circleStyle.prod3.grey}
             onClick={() => {
               setTypeOnePic(ProdPics.four.grey[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod3: {
+                  white: "circle white-circle no-style",
+                  sage: "circle sage-circle no-style",
+                  pink: "circle pink-circle no-style",
+                  grey: "circle grey-circle circle-style",
+                },
+              }));
             }}
           ></div>
         </>

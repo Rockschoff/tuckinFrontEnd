@@ -51,7 +51,11 @@ div {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.circle-style {
+  border: 2px solid grey;
 }
 
 .card-line {

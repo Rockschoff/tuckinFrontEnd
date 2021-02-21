@@ -12,6 +12,8 @@ import { animateScroll } from "react-scroll";
 import bed from "../images/bed.jfif";
 import vector from "../images/vector.svg";
 import con1 from "../images/conclusion-image1.jfif";
+import con3 from "../images/con3.jfif";
+import hero2 from "../images/hero2.jfif";
 function Home() {
   const scrollTo = () => {
     animateScroll.scrollTo(550, { duration: 1000 });
@@ -34,7 +36,7 @@ function Home() {
   return (
     <div className="Home">
       <div className="hero">
-        <img src={hero} className="hero-pic" />
+        <img src={hero2} className="hero-pic" />
         {/*<p className="hero-text-one">New year, fresh sheets </p>*/}
         <div className="hero-text-two">
           <p style={{ backgroundColor: "transparent" }}>Soft on your skin.</p>
@@ -65,7 +67,7 @@ function Home() {
           <Card type="3" />
         </div>
         <div className="conclusion">
-          <img src={con1} classNam="conclusion-image" />
+          <img src={con3} classNam="conclusion-image" />
           <p className="conclusion-text">Clean Bamboo, our fabric of future</p>
           <p className="made-from">
             Made from 100% organic bamboo, it’s softer, cooler and more

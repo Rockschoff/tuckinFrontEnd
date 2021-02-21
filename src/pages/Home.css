@@ -49,13 +49,14 @@
 }
 
 .conclusion {
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
+  /* background-color: white; */
 }
 img .conclusion-image {
-  width: 380px;
+  width: 100%;
   height: auto;
 }
 
@@ -70,6 +71,7 @@ img .conclusion-image {
   height: 229px;
   position: relative;
   top: -500px;
+  /* left: 7%; */
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
@@ -137,6 +139,6 @@ img .conclusion-image {
   position: relative;
   font-size: 20px;
   font-weight: 600;
-  top: -260px;
+  top: -350px;
   background-color: transparent;
 }
