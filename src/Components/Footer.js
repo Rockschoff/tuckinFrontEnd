@@ -30,6 +30,13 @@ function Footer() {
             className="footer-icon"
           />
         </div>
+        <div className="footer-text-final">
+          <FontAwesomeIcon
+            icon={["fas", "copyright"]}
+            style={{ backgroundColor: "#656565" }}
+          />
+          {"    Tuckin 2021 | Crafted in India"}
+        </div>
       </div>
     </>
   );

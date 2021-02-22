@@ -26,7 +26,7 @@ const MaterialInfo = {
   Twill: {
     name: "Twill",
     description:
-      "CleanBamboo is our signature bamboo lyocell fabric made from 100% organic bamboo—the most resource-efficient plant on the planet. We crush the bamboo into a pulp, then dissolve it into a fine fiber using a non-toxic, closed-loop system, saving 98% of the water. The fiber is spun into yarn and woven into a silk-like fabric that gets softer with every wash. It’s hypoallergenic, thermo-regulating and water-saving.",
+      "Slightly heavier than our signature sateen, twill offers a plushy softness with a crisper, hotel-like look. Made with our exclusive CleanBamboo fibers woven in parallel lines, you can expect the same breathability of our signature sateen with added drape and durability.",
     features: [
       "Want frizz-free, smooth hair",
       "Treat your skin with extracare",
