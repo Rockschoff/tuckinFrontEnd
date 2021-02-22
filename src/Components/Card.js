@@ -53,7 +53,7 @@ function Card({ type }) {
                   white: "circle white-circle circle-style",
                   sage: "circle sage-circle no-style",
                   pink: "circle pink-circle no-style",
-                  strip: "circle grey-circle no-style",
+                  strip: "circle strip-circle no-style",
                 },
               }));
             }}
@@ -68,7 +68,7 @@ function Card({ type }) {
                   white: "circle white-circle no-style",
                   sage: "circle sage-circle circle-style",
                   pink: "circle pink-circle no-style",
-                  strip: "circle grey-circle no-style",
+                  strip: "circle strip-circle no-style",
                 },
               }));
             }}
@@ -83,7 +83,7 @@ function Card({ type }) {
                   white: "circle white-circle no-style",
                   sage: "circle sage-circle no-style",
                   pink: "circle pink-circle circle-style",
-                  strip: "circle grey-circle no-style",
+                  strip: "circle strip-circle no-style",
                 },
               }));
             }}
@@ -98,7 +98,7 @@ function Card({ type }) {
                   white: "circle white-circle no-style",
                   sage: "circle sage-circle no-style",
                   pink: "circle pink-circle no-style",
-                  strip: "circle grey-circle circle-style",
+                  strip: "circle strip-circle circle-style",
                 },
               }));
             }}

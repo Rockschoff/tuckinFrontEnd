@@ -19,6 +19,7 @@ function Product1() {
   const [main, setMain] = React.useState(ProdPics.four.white[0]);
   const [size, setSize] = React.useState("118x118");
   const [isOpen, setIsOpen] = React.useState(false);
+  const [circleStyle, setCircleStyle] = React.useState("white-style");
 
   function togglePopup() {
     setIsOpen(!isOpen);
@@ -156,38 +157,58 @@ function Product1() {
         <div className="color-section">
           <div
             className="color-option "
-            style={{ backgroundColor: "white" }}
+            style={
+              circleStyle === "white-style"
+                ? { backgroundColor: "white", border: "3px solid grey" }
+                : { backgroundColor: "white" }
+            }
             onClick={() => {
               Send("Product3", "ColorOption-white");
               setColor("white");
               setMain(ProdPics.four.white[0]);
+              setCircleStyle("white-circle");
             }}
           ></div>
           <div
             className="color-option "
-            style={{ backgroundColor: "#598556" }}
+            style={
+              circleStyle === "sage-style"
+                ? { backgroundColor: "#598556", border: "3px solid grey" }
+                : { backgroundColor: "#598556" }
+            }
             onClick={() => {
               Send("Product3", "ColorOption-green");
               setColor("green");
               setMain(ProdPics.four.green[0]);
+              setCircleStyle("sage-style");
             }}
           ></div>
           <div
             className="color-option "
-            style={{ backgroundColor: "pink" }}
+            style={
+              circleStyle === "pink-style"
+                ? { backgroundColor: "pink", border: "3px solid grey" }
+                : { backgroundColor: "pink" }
+            }
             onClick={() => {
               Send("Product3", "ColorOption-pink");
               setColor("pink");
               setMain(ProdPics.four.pink[0]);
+              setCircleStyle("pink-style");
             }}
           ></div>
           <div
             className="color-option "
-            style={{ backgroundColor: "grey" }}
+            style={
+              circleStyle === "grey-style"
+                ? { backgroundColor: "grey", border: "3px solid grey" }
+                : { backgroundColor: "grey" }
+            }
             onClick={() => {
               Send("Product3", "ColorOption-grey");
               setColor("grey");
               setMain(ProdPics.four.grey[0]);
+              setCircleStyle("grey-style");
             }}
           ></div>
         </div>

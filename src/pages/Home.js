@@ -67,7 +67,7 @@ function Home() {
           <Card type="3" />
         </div>
         <div className="conclusion">
-          <img src={con3} classNam="conclusion-image" />
+          <img src={con3} className="conclusion-image" />
           <p className="conclusion-text">Clean Bamboo, our fabric of future</p>
           <p className="made-from">
             Made from 100% organic bamboo, it’s softer, cooler and more
