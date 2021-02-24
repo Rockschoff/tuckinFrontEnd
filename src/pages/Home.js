@@ -64,7 +64,7 @@ function Home() {
           </button>
         </Link></div>
 
-        <div className="shop-heading" data-aos="fade-up">
+        <div className="shop-heading" >
           {" "}
           Tuck yourself into CleanBamboo Sheets, for mindful living and sleeping{" "}
         </div>
