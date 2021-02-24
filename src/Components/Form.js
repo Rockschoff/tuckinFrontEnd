@@ -45,7 +45,7 @@ function Form({ width = false }) {
   }
 
   return (
-    <div className="form-container">
+    <div className="form-container" >
       <form>
         <div className="row">
           <div className="col-25">
@@ -54,7 +54,7 @@ function Form({ width = false }) {
           <div className="col-75">
             <input
               className="input-one"
-              style={width ? { width: "200px" } : { width: "250px" }}
+              style={width ? { width: "200px" } : { width: "250px" , marginRight : "100px" , marginLeft: "auto" } }
               type="email"
               id="fname"
               name="email"
@@ -73,7 +73,7 @@ function Form({ width = false }) {
           <div className="col-75">
             <input
               className="input-one"
-              style={width ? { width: "200px" } : { width: "250px" }}
+              style={width ? { width: "200px" } : { width: "250px" , marginRight : "100px" , marginLeft: "auto"  }}
               type="number"
               id="fname"
               name="firstname"

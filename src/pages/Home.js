@@ -14,6 +14,9 @@ import vector from "../images/vector.svg";
 import con1 from "../images/conclusion-image1.jfif";
 import con3 from "../images/con3.jfif";
 import hero2 from "../images/hero2.jfif";
+import Hero from "../Components/Hero"
+import Flaunt from  "../Components/Flaunt"
+import Carousal from  "../Components/Carousal"
 function Home() {
   const scrollTo = () => {
     animateScroll.scrollTo(550, { duration: 1000 });
@@ -35,6 +38,7 @@ function Home() {
 
   return (
     <div className="Home">
+     
       <div className="hero">
         <img src={hero2} className="hero-pic" />
         {/*<p className="hero-text-one">New year, fresh sheets </p>*/}
@@ -66,19 +70,15 @@ function Home() {
           <Card type="2" />
           <Card type="3" />
         </div>
+        <Flaunt />
+        <div className="reviews">
+          <Carousal className= "reviews-carousal"/>
+          </div>
         <div className="conclusion">
           <img src={con3} className="conclusion-image" />
           <p className="conclusion-text">Clean Bamboo, our fabric of future</p>
-          <p className="made-from">
-            Made from 100% organic bamboo, it’s softer, cooler and more
-            sustainable than cotton. For a healthier planet and happier
-            lounging.
-          </p>
-          <div className="flex">
-            <FlexCard ImgSrc="1" />
-            <FlexCard ImgSrc="2" />
-            <FlexCard ImgSrc="3" />
-          </div>
+          {}
+
           <Link to="/Materials">
             <button
               className="see-more-button"
@@ -89,6 +89,7 @@ function Home() {
               Learn More
             </button>
           </Link>
+          
           <p className="sign-up-prompt">Sign Up to stay in touch</p>
           <Form />
           <Footer />
@@ -99,3 +100,15 @@ function Home() {
 }
 
 export default Home;
+
+
+// /* <p className="made-from">
+//             Made from 100% organic bamboo, it’s softer, cooler and more
+//             sustainable than cotton. For a healthier planet and happier
+//             lounging.
+//           </p> */}
+//           {/* <div className="flex">
+//             <FlexCard ImgSrc="1" />
+//             <FlexCard ImgSrc="2" />
+//             <FlexCard ImgSrc="3" />
+//           </div> */

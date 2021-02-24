@@ -181,7 +181,7 @@ function Card({ type }) {
 
   return (
     <>
-      <div className="card">
+      <div className="card" style={{backgroundColor: "#f5f3eb" , border : "none"}}>
         <img
           src={
             type === "1" ? typeOnePic : type === "2" ? ProdPics.two : typeOnePic
@@ -208,6 +208,9 @@ function Card({ type }) {
               onClick={() => {
                 Send("Home", cardName);
                 scrollToTop();
+              }}
+              style={{
+                color : "white",
               }}
             >
               Buy Now

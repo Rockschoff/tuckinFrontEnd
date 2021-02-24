@@ -68,7 +68,7 @@ div {
 }
 
 .card-buy {
-  color: #4f3343;
+  
   display: block;
   width: 100px;
   margin-top: 20px;
@@ -76,10 +76,12 @@ div {
   margin-left: auto;
   /* text-decoration: underline; */
   /* padding-bottom: 15px; */
-  border: 1px solid black;
+  border: none;
   height: 30px;
   text-align: center;
   border-radius: 15px;
+  background: #4E505B;
+  color : white;
 }
 
 .card-buy:hover {

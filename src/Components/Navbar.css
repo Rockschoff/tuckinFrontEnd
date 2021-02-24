@@ -62,6 +62,7 @@ li {
   margin: 20px;
   border-bottom: 1.5px solid pink;
   padding-bottom: 10px;
+  width : 380px;
 }
 
 .icon {
@@ -78,7 +79,7 @@ li {
     top: 0;
     left: 0;
     height: 1000px;
-    width: 209px;
+    width: 100%;
     background-color: #f5f3eb;
 
     transform: translateX(-500px);
