@@ -17,6 +17,8 @@ import hero2 from "../images/hero2.jfif";
 import Hero from "../Components/Hero"
 import Flaunt from  "../Components/Flaunt"
 import Carousal from  "../Components/Carousal"
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Home() {
   const scrollTo = () => {
     animateScroll.scrollTo(550, { duration: 1000 });
@@ -29,6 +31,7 @@ function Home() {
   };
 
   React.useEffect(() => {
+    Aos.init({duration : 500})
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
@@ -42,7 +45,7 @@ function Home() {
       <div className="hero">
         <img src={hero2} className="hero-pic" />
         {/*<p className="hero-text-one">New year, fresh sheets </p>*/}
-        <div className="hero-text-two">
+        <div className="hero-fade"><div className="hero-text-two">
           <p style={{ backgroundColor: "transparent" }}>Soft on your skin.</p>
           <p style={{ backgroundColor: "transparent" }}>
             {" "}
@@ -59,41 +62,46 @@ function Home() {
           >
             Shop Sheets
           </button>
-        </Link>
+        </Link></div>
 
-        <div className="shop-heading">
+        <div className="shop-heading" data-aos="fade-up">
           {" "}
           Tuck yourself into CleanBamboo Sheets, for mindful living and sleeping{" "}
         </div>
-        <div className="body">
-          <Card type="1" />
-          <Card type="2" />
-          <Card type="3" />
+        <div className="body" data-aos="fade-up">
+          <div data-aos="fade-up"><Card type="1" /></div>
+          <div data-aos="fade-up"><Card type="2" /></div>
+          <div data-aos="fade-up"><Card type="3" /></div>
         </div>
-        <Flaunt />
-        <div className="reviews">
+
+        <div data-aos="fade-up"><Flaunt /></div>
+        <div className="reviews" data-aos="fade-up">
           <Carousal className= "reviews-carousal"/>
           </div>
-        <div className="conclusion">
-          <img src={con3} className="conclusion-image" />
-          <p className="conclusion-text">Clean Bamboo, our fabric of future</p>
-          {}
-
-          <Link to="/Materials">
+        <div className="con" data-aos="fade-up">
+          <img src={con3} className="conclusion-image" style={{}} />
+          <p className="conclusion-text" >Clean Bamboo, our fabric of future</p>
+          <Link to="/Materials" >
             <button
               className="see-more-button"
               onClick={() => {
                 Send("Home", "See More");
               }}
+              
             >
               Learn More
             </button>
           </Link>
-          
+          </div>
+          <div className="home-bottom" data-aos="fade-up">
           <p className="sign-up-prompt">Sign Up to stay in touch</p>
-          <Form />
+          <Form className="home-form" />
           <Footer />
-        </div>
+          </div>
+          
+          
+          
+        
       </div>
     </div>
   );

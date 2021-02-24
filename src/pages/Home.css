@@ -5,6 +5,14 @@
   height: 471px;
   z-index: -1;
 }
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.hero-fade{
+  animation : fadeIn ease 2s;
+}
 
 .home {
   background: #f5f3eb;
@@ -127,11 +135,18 @@
   line-height: 39px;
   margin-left: auto;
   margin-right: auto;
+  
   /* text-decoration: underline; */
 
   /* identical to box height */
 
   color: #4f3343;
+}
+.con{
+  position : relative;
+  top: 25px;
+  
+  
 }
 
 .hero-text-one {
@@ -158,4 +173,9 @@
 .reviews{
   /* border : 3px solid red; */
   z-index : 2;
+}
+
+.home-bottom{
+position : relative;
+bottom : 280px;
 }
