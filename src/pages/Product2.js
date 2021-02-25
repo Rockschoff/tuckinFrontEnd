@@ -11,7 +11,8 @@ import ProdPics from "../Components/ProdPics.js";
 import Send from "../Components/Send";
 import Bought from "../Components/Bought";
 import Popup from "../Components/Popup";
-
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Product1() {
   //state for the size picked and the number added
   const [color, setColor] = React.useState("white");
@@ -30,18 +31,22 @@ function Product1() {
       setCart(0);
     }
   }
-
+  React.useState(()=>{
+    Aos.init({duration : 700})
+  })
   return (
     <>
       <div>
+      <div data-aos= "fade">
         <div className="photo-section">
           <img src={ProdPics.two} className="main-photo"></img>
           <div className="photo-options">
             <img src={ProdPics.two} className="option"></img>
           </div>
-        </div>
-        <div className="product-name tag">Charcoal Fitted Sheet Set</div>
-        <div className="product-prize tag">INR 2499</div>
+        </div></div>
+        <div className="product-name tag" data-aos="fade">Charcoal Fitted Sheet Set</div>
+        <div className="product-prize tag" data-aos="fade">INR 2499</div>
+        <div data-aos="fade-up">
         <p className="colors-heading">Colors:</p>
         <div className="color-section">
           {/*colors.map((color) => (
@@ -79,7 +84,8 @@ function Product1() {
               setMain(ProdPics.one.strip[0]);
             }}
           ></div>*/}
-        </div>
+        </div> </div>
+        <div data-aos="fade-up">
         <p className="size-heading">Sizes :</p>
         <div className="size-section">
           <div className="size-option-row1">
@@ -157,18 +163,22 @@ function Product1() {
           <p className="offer">
             30 night free trial + free delivery on Orders over $50
           </p>
-        </div>
-
+        </div></div>
+        
+            <div data-aos="fade-up">
         <SliderCard
           heading="Description"
           content={ProductsInfo.prod2.description}
         />
         <SliderCard heading="Details" content={ProductsInfo.prod2.details} />
         <SliderCard heading="Care" content={ProductsInfo.prod2.care} />
-        <CarousalCard />
+        </div>
+        <div data-aos="fade-up"><CarousalCard /></div>
+        <div data-aos="fade-up">
         <p className="sign-up">Sign up to stay in touch! </p>
         <Form />
         <Footer />
+      </div>
       </div>
     </>
   );

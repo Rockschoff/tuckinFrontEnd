@@ -43,7 +43,7 @@ function Home() {
     <div className="Home">
      
       <div className="hero">
-        <img src={hero2} className="hero-pic" />
+        <img src={hero2} className="hero-pic" style={{width : "100%s"}} />
         {/*<p className="hero-text-one">New year, fresh sheets </p>*/}
         <div className="hero-fade"><div className="hero-text-two">
           <p style={{ backgroundColor: "transparent" }}>Soft on your skin.</p>

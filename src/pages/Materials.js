@@ -8,6 +8,9 @@ import { Player } from "video-react";
 import ReactDOM from "react-dom";
 import pic from "../images/waffle.webp";
 import Send from "../Components/Send";
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 
 // import "~video-react/dist/video-react.css"; // import css
 import Form from "../Components/Form";
@@ -35,6 +38,10 @@ function Materials() {
   });
   var status = ["true", "false", "false", "false"];
 
+  React.useEffect(()=>{
+    Aos.init({duration : 500})
+  })
+
   // React.useEffect(() => {
   //   var index = 0;
   //   console.log("new index", index);
@@ -59,7 +66,7 @@ function Materials() {
   // }, [material]);
 
   function putHeading() {
-    return <div>{renderHeading()}</div>;
+    return <div >{renderHeading()}</div>;
   }
 
   function putBody() {
@@ -209,7 +216,7 @@ function Materials() {
   function renderHeading() {
     if (material === "CleanBamboo") {
       return (
-        <div className="material-head ">{MaterialInfo.CleanBamboo.name}</div>
+        <div className="material-head"><p className="fade-right material-head" >{MaterialInfo.CleanBamboo.name}</p></div>
       );
     } else if (material === "Charcoal") {
       return <div className="material-head ">{MaterialInfo.Charcoal.name}</div>;

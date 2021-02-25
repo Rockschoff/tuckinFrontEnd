@@ -11,7 +11,8 @@ import ProdPics from "../Components/ProdPics.js";
 import Send from "../Components/Send";
 import Bought from "../Components/Bought";
 import Popup from "../Components/Popup";
-
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Product1() {
   //state for the size picked and the number added
   const [color, setColor] = React.useState("white");
@@ -24,6 +25,10 @@ function Product1() {
   function togglePopup() {
     setIsOpen(!isOpen);
   }
+
+  React.useEffect(()=>{
+    Aos.init({duration : 700})
+  })
 
   function renderOptions() {
     if (color === "white") {
@@ -148,17 +153,21 @@ function Product1() {
   return (
     <>
       <div>
-        <div className="photo-section">
+      <div data-aos="fade">
+        <div className="photo-section"  >
           <img src={main} className="main-photo"></img>
           <div className="photo-options">{renderOptions()}</div>
         </div>
         <div className="product-name tag">Bamboo Lyocell Sheet Set</div>
         <div className="product-prize tag">INR 2499 </div>
+        </div>
+        <div data-aos="fade-up">
         <p className="colors-heading ">Colors:</p>
         <div className="color-section">
           {/*colors.map((color) => (
             <div className={"color-option " + color}></div>
           ))*/}
+          
           <div
             className="color-option "
             style={
@@ -215,7 +224,8 @@ function Product1() {
               setCircleStyle("strip-style");
             }}
           ></div>
-        </div>
+        </div></div>
+        <div data-aos="fade-up">
         <p className="size-heading">Sizes :</p>
         <div className="size-section">
           <div className="size-option-row1">
@@ -257,6 +267,7 @@ function Product1() {
               <div className="size-option">Size</div>
             </div>*/}
         </div>
+
         <div className="add-section">
           <div className="counter add-button">
             <button
@@ -293,7 +304,7 @@ function Product1() {
           <p className="offer">
             30 night free trial + free delivery on Orders over $50
           </p>
-        </div>
+        </div></div>
 
         <SliderCard
           heading="Description"
@@ -310,10 +321,10 @@ function Product1() {
           content={ProductsInfo.prod1.care}
           pointer={false}
         />
-        <CarousalCard />
-        <p className="sign-up">Sign up to stay in touch! </p>
+        <div data-aos="fade-up"><CarousalCard /></div>
+        <div data-aos="fade-up"><p className="sign-up">Sign up to stay in touch! </p>
         <Form />
-        <Footer />
+        <Footer /></div>
       </div>
     </>
   );

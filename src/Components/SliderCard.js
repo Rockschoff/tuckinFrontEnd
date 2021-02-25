@@ -33,12 +33,12 @@ function SliderCard({ heading, content, pointer }) {
     return <ul className="slider-list">{feats}</ul>;
   }
   return (
-    <div className="slider-wrapper">
-      <div className="slide-heading" onClick={showContent}>
+    <div className="slider-wrapper" >
+      <div className="slide-heading"  style={{height : "0px" , marginBottom : "0px"}}onClick={showContent}>
         {heading}
       </div>
       <div className="slide-content" style={style}>
-        <p className="slide-content-para">
+        <p className="slide-content-para" style={style}>
           {pointer ? renderPoints() : content}
         </p>
       </div>
