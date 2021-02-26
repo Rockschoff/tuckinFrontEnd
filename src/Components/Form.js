@@ -57,7 +57,7 @@ function Form({ width = false }) {
               style={
                 width
                   ? { width: "200px" }
-                  : { width: "250px", marginRight: "100px", marginLeft: "auto" }
+                  : { width: "250px", marginRight: "80px", marginLeft: "auto" }
               }
               type="email"
               id="fname"
@@ -80,7 +80,7 @@ function Form({ width = false }) {
               style={
                 width
                   ? { width: "200px" }
-                  : { width: "250px", marginRight: "100px", marginLeft: "auto" }
+                  : { width: "250px", marginRight: "80px", marginLeft: "auto" }
               }
               type="number"
               id="fname"
