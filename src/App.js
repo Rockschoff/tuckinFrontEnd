@@ -10,6 +10,7 @@ import Product1 from "./pages/Product1.js";
 import Product2 from "./pages/Product2.js";
 import Product3 from "./pages/Product3.js";
 import TrackOrder from "./pages/TrackOrder.js";
+import NewMaterials from "./pages/NewMaterials.js";
 
 function App() {
   const [apiConnect, setApiConnect] = React.useState("initial");
@@ -54,7 +55,7 @@ function App() {
           <Route path="/Product-3" exact component={Product3} />
           <Route path="/About" exact component={About} />
           <Route path="/trackorder" exact component={TrackOrder} />
-          <Route path="/Materials" exact component={Materials} />
+          <Route path="/Materials" exact component={NewMaterials} />
         </Switch>
       </Router>
     </div>
