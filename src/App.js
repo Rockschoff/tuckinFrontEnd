@@ -11,7 +11,10 @@ import Product2 from "./pages/Product2.js";
 import Product3 from "./pages/Product3.js";
 import TrackOrder from "./pages/TrackOrder.js";
 import NewMaterials from "./pages/NewMaterials.js";
+import ReactGA from "react-ga";
+import Analytics from "react-router-ga";
 
+ReactGA.initialize("UA-190710118-1");
 function App() {
   const [apiConnect, setApiConnect] = React.useState("initial");
   const [err, setErr] = React.useState({});
@@ -47,16 +50,18 @@ function App() {
     <div className="App">
       <Router>
         <Navbar position={scrollPosition} className="navbar-app" />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/Product" exact component={Product} />
-          <Route path="/Product-1" exact component={Product1} />
-          <Route path="/Product-2" exact component={Product2} />
-          <Route path="/Product-3" exact component={Product3} />
-          <Route path="/About" exact component={About} />
-          <Route path="/trackorder" exact component={TrackOrder} />
-          <Route path="/Materials" exact component={NewMaterials} />
-        </Switch>
+        <Analytics id="UA-190710118-1" debug={true}>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/Product" exact component={Product} />
+            <Route path="/Product-1" exact component={Product1} />
+            <Route path="/Product-2" exact component={Product2} />
+            <Route path="/Product-3" exact component={Product3} />
+            <Route path="/About" exact component={About} />
+            <Route path="/trackorder" exact component={TrackOrder} />
+            <Route path="/Materials" exact component={NewMaterials} />
+          </Switch>
+        </Analytics>
       </Router>
     </div>
   );
