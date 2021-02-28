@@ -6,7 +6,7 @@ import ProdPics from "./ProdPics.js";
 import Send from "./Send";
 function Card({ type }) {
   const [typeOnePic, setTypeOnePic] = React.useState(
-    type === 1 ? ProdPics.one.white[0] : ProdPics.four.white[0]
+    type === "1" ? ProdPics.one.sage[0] : ProdPics.four.white[0]
   );
 
   const [cardName, setCardName] = React.useState(
@@ -19,8 +19,8 @@ function Card({ type }) {
 
   const [circleStyle, setCircleStyle] = React.useState({
     prod1: {
-      white: "circle white-circle circle-style",
-      sage: "circle sage-circle no-style",
+      white: "circle white-circle no-style",
+      sage: "circle sage-circle circle-style",
       pink: "circle pink-circle no-style",
       strip: "circle strip-circle no-style",
     },
@@ -44,21 +44,6 @@ function Card({ type }) {
       return (
         <>
           <div
-            className={circleStyle.prod1.white}
-            onClick={() => {
-              setTypeOnePic(ProdPics.one.white[0]);
-              setCircleStyle((prev) => ({
-                ...prev,
-                prod1: {
-                  white: "circle white-circle circle-style",
-                  sage: "circle sage-circle no-style",
-                  pink: "circle pink-circle no-style",
-                  strip: "circle strip-circle no-style",
-                },
-              }));
-            }}
-          ></div>
-          <div
             className={circleStyle.prod1.sage}
             onClick={() => {
               setTypeOnePic(ProdPics.one.sage[0]);
@@ -67,6 +52,21 @@ function Card({ type }) {
                 prod1: {
                   white: "circle white-circle no-style",
                   sage: "circle sage-circle circle-style",
+                  pink: "circle pink-circle no-style",
+                  strip: "circle strip-circle no-style",
+                },
+              }));
+            }}
+          ></div>
+          <div
+            className={circleStyle.prod1.white}
+            onClick={() => {
+              setTypeOnePic(ProdPics.one.white[0]);
+              setCircleStyle((prev) => ({
+                ...prev,
+                prod1: {
+                  white: "circle white-circle circle-style",
+                  sage: "circle sage-circle no-style",
                   pink: "circle pink-circle no-style",
                   strip: "circle strip-circle no-style",
                 },
@@ -181,7 +181,10 @@ function Card({ type }) {
 
   return (
     <>
-      <div className="card" style={{backgroundColor: "#f5f3eb" , border : "none"}}>
+      <div
+        className="card"
+        style={{ backgroundColor: "#f5f3eb", border: "none" }}
+      >
         <img
           src={
             type === "1" ? typeOnePic : type === "2" ? ProdPics.two : typeOnePic
@@ -210,7 +213,7 @@ function Card({ type }) {
                 scrollToTop();
               }}
               style={{
-                color : "white",
+                color: "white",
               }}
             >
               Buy Now

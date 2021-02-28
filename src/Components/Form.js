@@ -56,7 +56,7 @@ function Form({ width = false }) {
               className="input-one"
               style={
                 width
-                  ? { width: "200px" }
+                  ? { width: "200px", marginRight: "70px" }
                   : { width: "250px", marginRight: "80px", marginLeft: "auto" }
               }
               type="email"
@@ -79,7 +79,7 @@ function Form({ width = false }) {
               className="input-one"
               style={
                 width
-                  ? { width: "200px" }
+                  ? { width: "200px", marginRight: "70px" }
                   : { width: "250px", marginRight: "80px", marginLeft: "auto" }
               }
               type="number"

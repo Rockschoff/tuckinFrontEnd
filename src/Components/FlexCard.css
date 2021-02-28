@@ -28,6 +28,8 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  bottom: 40px;
 
   color: #4f3343;
 }

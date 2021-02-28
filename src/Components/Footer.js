@@ -11,7 +11,7 @@ function Footer() {
     <>
       <div className="footer">
         <div className="footer-text">
-          Consumers rate us 4.7/5 based on 188 reviews
+          Consumers rate us 4.7/5 based on 2000+ reviews
         </div>
         <div className="footer-media">
           <FontAwesomeIcon

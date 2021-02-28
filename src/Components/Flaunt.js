@@ -1,6 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Send from "./Send.js";
 
 function Flaunt() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div id="shopify-section-1595277280466" className="shopify-section">
       <div
@@ -138,19 +143,24 @@ function Flaunt() {
             >
               Made from 100% organic bamboo, it's better for you and the planet.
             </p>
-            <a
-              className="cta btn-white animate ett_tracking"
-              data-animation="rise"
-              href="/collections/bedding"
-              id="home-bamboo-1595277280466_cta"
-              style={{
-                transitionDelay: "1.2s",
-                backgroundColor: "#4E505B",
-                color: "white",
-              }}
-            >
-              Explore Bamboo
-            </a>
+            <Link to="/About">
+              <a
+                className="cta btn-white animate ett_tracking"
+                data-animation="rise"
+                href="/collections/bedding"
+                id="home-bamboo-1595277280466_cta"
+                style={{
+                  transitionDelay: "1.2s",
+                  backgroundColor: "#4E505B",
+                  color: "white",
+                }}
+                onClick={() => {
+                  scrollToTop();
+                }}
+              >
+                Explore Bamboo
+              </a>
+            </Link>
           </div>
         </div>
       </div>

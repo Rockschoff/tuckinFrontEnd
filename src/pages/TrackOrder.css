@@ -6,6 +6,7 @@ input[type="email"] {
   box-sizing: border-box;
   border-radius: 5px;
   margin-bottom: 15px;
+  margin-right: 80px;
 }
 
 input[type="number"] {
@@ -15,6 +16,7 @@ input[type="number"] {
   border: 1.5px solid #4f3343;
   box-sizing: border-box;
   border-radius: 5px;
+  margin-right: 80px;
 }
 
 .order-container {

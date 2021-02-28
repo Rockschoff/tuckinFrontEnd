@@ -162,15 +162,14 @@ function Carousal() {
                       textAlign: "left",
                     }}
                   >
-                    “When you stay at the Plaza hotel and <br />
-                    miss your bed, you know you are doing <br /> something
-                    right. ”
+                    “You can feel the calmness of the soft <br />
+                    fabric, Truly enhances your sleeping <br /> experience
                   </p>
                   <div
                     className="reviews__block-attribution"
                     style={{ backgroundColor: "#f0f4f7", textAlign: "left" }}
                   >
-                    Bruce C., Texas, USA
+                    Rishi, New Delhi.
                   </div>
                 </div>
                 <div
